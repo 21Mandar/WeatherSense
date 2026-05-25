@@ -93,7 +93,7 @@ WeatherSense/
 Python 3.12 recommended.
  
 ~~~bash
-git clone https://github.com/<your-username>/WeatherSense.git
+git clone https://github.com/21Mandar/WeatherSense.git
 cd WeatherSense
  
 python3.12 -m venv venv
