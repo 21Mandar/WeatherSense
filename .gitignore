@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data & model artifacts
+data/raw/
+data/real_weather
+outputs/
+*.mp4
+*.avi
+*.mov
+*.pt
+*.pth
+*.onnx
+mlruns/
+
+# Note: docs/ is intentionally tracked — contains README assets
+# Note: data/SOURCES.md is tracked for attribution; only data/raw and data/real_weather are excluded
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env vars
+.env
