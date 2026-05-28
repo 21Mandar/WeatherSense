@@ -5,21 +5,20 @@ Runs YOLOv8n on a small sample of BDD val (clear + daytime) and computes mAP
 using our MAPEvaluator. Verifies the result lands in a plausible range before
 we trust the calculator for the full Stage 5 benchmark.
 
-Expected ballpark for YOLOv8n on BDD val (clean baseline, no fine-tuning):
-- mAP@50:    0.15 - 0.40 (most likely 0.20 - 0.30)
-- mAP@50:95: 0.08 - 0.25
-
-Per class expectations:
-- car:              highest AP, ~0.40-0.60 mAP@50
-- truck:            ~0.20-0.40
-- pedestrian:       ~0.20-0.35
-- bus:              ~0.20-0.40 (small sample size noisy)
-- traffic_light:    ~0.10-0.30 (small objects)
-- traffic_sign:     LOW, ~0.02-0.10 (only stop_sign maps from COCO)
-- rider:            ~0.00 (no clean COCO mapping; documented limitation)
-- bicycle:          ~0.05-0.20 (depends on sample)
-- motorcycle:       ~0.00-0.15 (sparse class)
-- train:            ~0.00 (very sparse in BDD val; probably 0 samples)
+Verified baseline (200 clear+daytime BDD val images, YOLOv8n):
+- mAP@50:    0.2225
+- mAP@50:95: 0.1279
+Per-class AP@50:95 in this run:
+  car:           0.32   (dominant class)
+  truck:         0.20
+  pedestrian:    0.20
+  bus:           0.19
+  motorcycle:    0.08   (sparse class, noisy)
+  bicycle:       0.08   (sparse class, noisy)
+  traffic light: 0.07
+  traffic sign:  0.02   (limited - only stop_sign maps from COCO)
+  rider:         0.00   (no COCO mapping - documented)
+  train:         n/a    (15 GT total in BDD val, rare in samples)
 
 If overall mAP@50 is < 0.10 or > 0.50, something is likely wrong - we debug
 before scaling up.
