@@ -38,7 +38,14 @@ BDD_CLASSES = [
 ]
 
 BDD_CLASS_TO_ID = {name: idx for idx, name in enumerate(BDD_CLASSES)}
-
+# Legacy BDD100K format (bdd100k_labels_images_val.json) uses different
+# category strings than the newer det_20 format that BDD_CLASSES is named for.
+# Normalize so both formats load identically.
+BDD_CATEGORY_ALIASES = {
+    "person": "pedestrian",
+    "bike":   "bicycle",
+    "motor":  "motorcycle",
+}
 
 class BDDDataset:
     """Lazy iterator over BDD100K validation images + annotations."""
@@ -114,6 +121,8 @@ class BDDDataset:
                 continue
 
             category = label.get("category")
+            # Normalize legacy format names to canonical BDD_CLASSES names
+            category = BDD_CATEGORY_ALIASES.get(category, category)
             if category not in BDD_CLASS_TO_ID:
                 # Unknown class - shouldn't happen but skip just in case
                 continue

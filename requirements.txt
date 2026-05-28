@@ -8,3 +8,5 @@ ipykernel==6.29.5
 datasets==4.8.5
 huggingface_hub==1.16.1
 pillow==12.2.0
+torchmetrics==1.9.0
+pycocotools==2.0.11
