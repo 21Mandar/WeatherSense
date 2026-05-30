@@ -1,0 +1,2 @@
+model,condition,intensity,n_images,runtime_seconds,map_50,map_50_95,pedestrian,rider,car,truck,bus,train,motorcycle,bicycle,traffic light,traffic sign
+yolov8m,fog_light,light,10000,2636.7,0.2813,0.1657,0.2518,0.0000,0.3591,0.2880,0.3062,0.0055,0.1689,0.1640,0.0912,0.0227

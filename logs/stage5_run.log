@@ -1,0 +1,671 @@
+/Users/mandar/WeatherSense/venv/lib/python3.12/site-packages/albumentations/__init__.py:13: UserWarning: A new version of Albumentations is available: 2.0.8 (you have 1.4.18). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+========================================================
+Phase 2 Stage 5: full benchmark
+Started at 2026-05-29 13:30:29
+========================================================
+
+Loading BDD val (all 10,000 images)...
+Loading BDD labels from /Users/mandar/datasets/bdd100k/archive/bdd100k_labels_release/bdd100k/labels/bdd100k_labels_images_val.json ...
+Loaded 10000 entries.
+Dataset size: 10000
+
+Pre-loading 10000 GT samples (metadata only) ...
+Loaded 10000 GT entries in 1s
+
+############################################################
+Model: yolov8n
+############################################################
+
+Loading yolov8n ...
+Loading yolov8n...
+
+[1/39] yolov8n / clean (n/a)
+    [ 1000/10000] 43s elapsed, 23.0 img/s, ETA 391s
+    [ 2000/10000] 84s elapsed, 23.9 img/s, ETA 334s
+    [ 3000/10000] 124s elapsed, 24.3 img/s, ETA 289s
+    [ 4000/10000] 164s elapsed, 24.4 img/s, ETA 246s
+    [ 5000/10000] 204s elapsed, 24.5 img/s, ETA 204s
+    [ 6000/10000] 245s elapsed, 24.5 img/s, ETA 163s
+    [ 7000/10000] 285s elapsed, 24.6 img/s, ETA 122s
+    [ 8000/10000] 325s elapsed, 24.6 img/s, ETA 81s
+    [ 9000/10000] 366s elapsed, 24.6 img/s, ETA 41s
+    [10000/10000] 408s elapsed, 24.5 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1773  mAP@50:95 = 0.1032  (infer 408s + compute 157s)
+    Saved -> yolov8n_clean.csv
+    Overall ETA: 5:59:06 (38 pairs left)
+
+[2/39] yolov8n / rain_light (light)
+    [ 1000/10000] 63s elapsed, 15.8 img/s, ETA 571s
+    [ 2000/10000] 129s elapsed, 15.5 img/s, ETA 518s
+    [ 3000/10000] 190s elapsed, 15.8 img/s, ETA 444s
+    [ 4000/10000] 250s elapsed, 16.0 img/s, ETA 375s
+    [ 5000/10000] 309s elapsed, 16.2 img/s, ETA 309s
+    [ 6000/10000] 368s elapsed, 16.3 img/s, ETA 246s
+    [ 7000/10000] 429s elapsed, 16.3 img/s, ETA 184s
+    [ 8000/10000] 489s elapsed, 16.4 img/s, ETA 122s
+    [ 9000/10000] 548s elapsed, 16.4 img/s, ETA 61s
+    [10000/10000] 608s elapsed, 16.4 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1110  mAP@50:95 = 0.0621  (infer 608s + compute 146s)
+    Saved -> yolov8n_rain_light.csv
+    Overall ETA: 6:47:24 (37 pairs left)
+
+[3/39] yolov8n / rain_medium (medium)
+    [ 1000/10000] 60s elapsed, 16.5 img/s, ETA 544s
+    [ 2000/10000] 121s elapsed, 16.5 img/s, ETA 486s
+    [ 3000/10000] 179s elapsed, 16.8 img/s, ETA 417s
+    [ 4000/10000] 237s elapsed, 16.9 img/s, ETA 355s
+    [ 5000/10000] 295s elapsed, 16.9 img/s, ETA 295s
+    [ 6000/10000] 353s elapsed, 17.0 img/s, ETA 235s
+    [ 7000/10000] 412s elapsed, 17.0 img/s, ETA 176s
+    [ 8000/10000] 470s elapsed, 17.0 img/s, ETA 117s
+    [ 9000/10000] 527s elapsed, 17.1 img/s, ETA 59s
+    [10000/10000] 584s elapsed, 17.1 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0728  mAP@50:95 = 0.0392  (infer 584s + compute 142s)
+    Saved -> yolov8n_rain_medium.csv
+    Overall ETA: 6:49:24 (36 pairs left)
+
+[4/39] yolov8n / rain_heavy (heavy)
+    [ 1000/10000] 61s elapsed, 16.3 img/s, ETA 551s
+    [ 2000/10000] 121s elapsed, 16.6 img/s, ETA 483s
+    [ 3000/10000] 181s elapsed, 16.6 img/s, ETA 422s
+    [ 4000/10000] 241s elapsed, 16.6 img/s, ETA 362s
+    [ 5000/10000] 301s elapsed, 16.6 img/s, ETA 301s
+    [ 6000/10000] 367s elapsed, 16.4 img/s, ETA 244s
+    [ 7000/10000] 432s elapsed, 16.2 img/s, ETA 185s
+    [ 8000/10000] 492s elapsed, 16.3 img/s, ETA 123s
+    [ 9000/10000] 553s elapsed, 16.3 img/s, ETA 61s
+    [10000/10000] 612s elapsed, 16.3 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0318  mAP@50:95 = 0.0163  (infer 612s + compute 127s)
+    Saved -> yolov8n_rain_heavy.csv
+    Overall ETA: 6:46:21 (35 pairs left)
+
+[5/39] yolov8n / fog_light (light)
+    [ 1000/10000] 138s elapsed, 7.3 img/s, ETA 1239s
+    [ 2000/10000] 277s elapsed, 7.2 img/s, ETA 1107s
+    [ 3000/10000] 417s elapsed, 7.2 img/s, ETA 972s
+    [ 4000/10000] 554s elapsed, 7.2 img/s, ETA 831s
+    [ 5000/10000] 691s elapsed, 7.2 img/s, ETA 691s
+    [ 6000/10000] 830s elapsed, 7.2 img/s, ETA 553s
+    [ 7000/10000] 968s elapsed, 7.2 img/s, ETA 415s
+    [ 8000/10000] 1107s elapsed, 7.2 img/s, ETA 277s
+    [ 9000/10000] 1252s elapsed, 7.2 img/s, ETA 139s
+    [10000/10000] 1399s elapsed, 7.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1605  mAP@50:95 = 0.0933  (infer 1399s + compute 155s)
+    Saved -> yolov8n_fog_light.csv
+    Overall ETA: 8:11:53 (34 pairs left)
+
+[6/39] yolov8n / fog_medium (medium)
+    [ 1000/10000] 139s elapsed, 7.2 img/s, ETA 1254s
+    [ 2000/10000] 274s elapsed, 7.3 img/s, ETA 1095s
+    [ 3000/10000] 409s elapsed, 7.3 img/s, ETA 954s
+    [ 4000/10000] 552s elapsed, 7.2 img/s, ETA 828s
+    [ 5000/10000] 696s elapsed, 7.2 img/s, ETA 696s
+    [ 6000/10000] 841s elapsed, 7.1 img/s, ETA 560s
+    [ 7000/10000] 978s elapsed, 7.2 img/s, ETA 419s
+    [ 8000/10000] 1115s elapsed, 7.2 img/s, ETA 279s
+    [ 9000/10000] 1251s elapsed, 7.2 img/s, ETA 139s
+    [10000/10000] 1389s elapsed, 7.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1292  mAP@50:95 = 0.0756  (infer 1389s + compute 157s)
+    Saved -> yolov8n_fog_medium.csv
+    Overall ETA: 8:59:34 (33 pairs left)
+
+[7/39] yolov8n / fog_heavy (heavy)
+    [ 1000/10000] 135s elapsed, 7.4 img/s, ETA 1218s
+    [ 2000/10000] 270s elapsed, 7.4 img/s, ETA 1080s
+    [ 3000/10000] 406s elapsed, 7.4 img/s, ETA 947s
+    [ 4000/10000] 542s elapsed, 7.4 img/s, ETA 813s
+    [ 5000/10000] 679s elapsed, 7.4 img/s, ETA 679s
+    [ 6000/10000] 816s elapsed, 7.4 img/s, ETA 544s
+    [ 7000/10000] 952s elapsed, 7.4 img/s, ETA 408s
+    [ 8000/10000] 1094s elapsed, 7.3 img/s, ETA 273s
+    [ 9000/10000] 1234s elapsed, 7.3 img/s, ETA 137s
+    [10000/10000] 1372s elapsed, 7.3 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0791  mAP@50:95 = 0.0463  (infer 1372s + compute 151s)
+    Saved -> yolov8n_fog_heavy.csv
+    Overall ETA: 9:24:30 (32 pairs left)
+
+[8/39] yolov8n / night_light (light)
+    [ 1000/10000] 111s elapsed, 9.0 img/s, ETA 999s
+    [ 2000/10000] 220s elapsed, 9.1 img/s, ETA 878s
+    [ 3000/10000] 329s elapsed, 9.1 img/s, ETA 767s
+    [ 4000/10000] 440s elapsed, 9.1 img/s, ETA 659s
+    [ 5000/10000] 550s elapsed, 9.1 img/s, ETA 550s
+    [ 6000/10000] 663s elapsed, 9.0 img/s, ETA 442s
+    [ 7000/10000] 774s elapsed, 9.0 img/s, ETA 332s
+    [ 8000/10000] 884s elapsed, 9.0 img/s, ETA 221s
+    [ 9000/10000] 995s elapsed, 9.0 img/s, ETA 111s
+    [10000/10000] 1105s elapsed, 9.0 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1603  mAP@50:95 = 0.0934  (infer 1105s + compute 154s)
+    Saved -> yolov8n_night_light.csv
+    Overall ETA: 9:19:52 (31 pairs left)
+
+[9/39] yolov8n / night_medium (medium)
+    [ 1000/10000] 110s elapsed, 9.1 img/s, ETA 991s
+    [ 2000/10000] 225s elapsed, 8.9 img/s, ETA 898s
+    [ 3000/10000] 349s elapsed, 8.6 img/s, ETA 815s
+    [ 4000/10000] 467s elapsed, 8.6 img/s, ETA 701s
+    [ 5000/10000] 579s elapsed, 8.6 img/s, ETA 579s
+    [ 6000/10000] 690s elapsed, 8.7 img/s, ETA 460s
+    [ 7000/10000] 808s elapsed, 8.7 img/s, ETA 346s
+    [ 8000/10000] 939s elapsed, 8.5 img/s, ETA 235s
+    [ 9000/10000] 1055s elapsed, 8.5 img/s, ETA 117s
+    [10000/10000] 1166s elapsed, 8.6 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0826  mAP@50:95 = 0.0472  (infer 1166s + compute 138s)
+    Saved -> yolov8n_night_medium.csv
+    Overall ETA: 9:14:03 (30 pairs left)
+
+[10/39] yolov8n / night_heavy (heavy)
+    [ 1000/10000] 113s elapsed, 8.8 img/s, ETA 1018s
+    [ 2000/10000] 224s elapsed, 8.9 img/s, ETA 897s
+    [ 3000/10000] 334s elapsed, 9.0 img/s, ETA 780s
+    [ 4000/10000] 445s elapsed, 9.0 img/s, ETA 667s
+    [ 5000/10000] 556s elapsed, 9.0 img/s, ETA 556s
+    [ 6000/10000] 666s elapsed, 9.0 img/s, ETA 444s
+    [ 7000/10000] 777s elapsed, 9.0 img/s, ETA 333s
+    [ 8000/10000] 887s elapsed, 9.0 img/s, ETA 222s
+    [ 9000/10000] 999s elapsed, 9.0 img/s, ETA 111s
+    [10000/10000] 1109s elapsed, 9.0 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0034  mAP@50:95 = 0.0022  (infer 1109s + compute 33s)
+    Saved -> yolov8n_night_heavy.csv
+    Overall ETA: 8:57:14 (29 pairs left)
+
+[11/39] yolov8n / motion_blur_light (light)
+    [ 1000/10000] 84s elapsed, 11.9 img/s, ETA 757s
+    [ 2000/10000] 167s elapsed, 11.9 img/s, ETA 670s
+    [ 3000/10000] 250s elapsed, 12.0 img/s, ETA 583s
+    [ 4000/10000] 332s elapsed, 12.1 img/s, ETA 498s
+    [ 5000/10000] 414s elapsed, 12.1 img/s, ETA 414s
+    [ 6000/10000] 494s elapsed, 12.1 img/s, ETA 330s
+    [ 7000/10000] 576s elapsed, 12.1 img/s, ETA 247s
+    [ 8000/10000] 658s elapsed, 12.2 img/s, ETA 164s
+    [ 9000/10000] 739s elapsed, 12.2 img/s, ETA 82s
+    [10000/10000] 821s elapsed, 12.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1307  mAP@50:95 = 0.0783  (infer 821s + compute 159s)
+    Saved -> yolov8n_motion_blur_light.csv
+    Overall ETA: 8:33:08 (28 pairs left)
+
+[12/39] yolov8n / motion_blur_medium (medium)
+    [ 1000/10000] 85s elapsed, 11.7 img/s, ETA 769s
+    [ 2000/10000] 170s elapsed, 11.8 img/s, ETA 678s
+    [ 3000/10000] 256s elapsed, 11.7 img/s, ETA 597s
+    [ 4000/10000] 339s elapsed, 11.8 img/s, ETA 509s
+    [ 5000/10000] 423s elapsed, 11.8 img/s, ETA 423s
+    [ 6000/10000] 506s elapsed, 11.9 img/s, ETA 337s
+    [ 7000/10000] 589s elapsed, 11.9 img/s, ETA 252s
+    [ 8000/10000] 672s elapsed, 11.9 img/s, ETA 168s
+    [ 9000/10000] 755s elapsed, 11.9 img/s, ETA 84s
+    [10000/10000] 839s elapsed, 11.9 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0762  mAP@50:95 = 0.0449  (infer 839s + compute 154s)
+    Saved -> yolov8n_motion_blur_medium.csv
+    Overall ETA: 8:10:48 (27 pairs left)
+
+[13/39] yolov8n / motion_blur_heavy (heavy)
+    [ 1000/10000] 93s elapsed, 10.8 img/s, ETA 837s
+    [ 2000/10000] 185s elapsed, 10.8 img/s, ETA 740s
+    [ 3000/10000] 275s elapsed, 10.9 img/s, ETA 641s
+    [ 4000/10000] 363s elapsed, 11.0 img/s, ETA 544s
+    [ 5000/10000] 458s elapsed, 10.9 img/s, ETA 458s
+    [ 6000/10000] 552s elapsed, 10.9 img/s, ETA 368s
+    [ 7000/10000] 641s elapsed, 10.9 img/s, ETA 275s
+    [ 8000/10000] 731s elapsed, 10.9 img/s, ETA 183s
+    [ 9000/10000] 821s elapsed, 11.0 img/s, ETA 91s
+    [10000/10000] 910s elapsed, 11.0 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0411  mAP@50:95 = 0.0239  (infer 910s + compute 152s)
+    Saved -> yolov8n_motion_blur_heavy.csv
+    Overall ETA: 7:51:39 (26 pairs left)
+
+############################################################
+Model: yolov8s
+############################################################
+
+Loading yolov8s ...
+Loading yolov8s...
+Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8s.pt to 'yolov8s.pt'...
+  0%|          | 0.00/21.5M [00:00<?, ?B/s]  1%|          | 256k/21.5M [00:00<00:09, 2.40MB/s]  2%|▏         | 512k/21.5M [00:00<00:11, 1.87MB/s]  3%|▎         | 768k/21.5M [00:00<00:11, 1.86MB/s]  5%|▍         | 1.00M/21.5M [00:00<00:11, 1.92MB/s]  6%|▋         | 1.38M/21.5M [00:00<00:08, 2.36MB/s]  8%|▊         | 1.75M/21.5M [00:00<00:07, 2.63MB/s] 10%|▉         | 2.12M/21.5M [00:00<00:06, 2.93MB/s] 12%|█▏        | 2.50M/21.5M [00:01<00:06, 3.14MB/s] 13%|█▎        | 2.88M/21.5M [00:01<00:06, 3.06MB/s] 15%|█▌        | 3.25M/21.5M [00:01<00:06, 2.81MB/s] 17%|█▋        | 3.62M/21.5M [00:01<00:07, 2.61MB/s] 19%|█▊        | 4.00M/21.5M [00:01<00:07, 2.42MB/s] 20%|██        | 4.38M/21.5M [00:01<00:07, 2.45MB/s] 21%|██▏       | 4.62M/21.5M [00:01<00:08, 2.15MB/s] 23%|██▎       | 5.00M/21.5M [00:02<00:07, 2.44MB/s] 25%|██▍       | 5.38M/21.5M [00:02<00:06, 2.65MB/s] 27%|██▋       | 5.75M/21.5M [00:02<00:06, 2.49MB/s] 28%|██▊       | 6.00M/21.5M [00:02<00:06, 2.36MB/s] 29%|██▉       | 6.25M/21.5M [00:02<00:06, 2.41MB/s] 31%|███       | 6.62M/21.5M [00:02<00:06, 2.51MB/s] 32%|███▏      | 6.88M/21.5M [00:02<00:06, 2.49MB/s] 33%|███▎      | 7.12M/21.5M [00:02<00:06, 2.52MB/s] 34%|███▍      | 7.38M/21.5M [00:03<00:05, 2.48MB/s] 36%|███▌      | 7.75M/21.5M [00:03<00:05, 2.71MB/s] 38%|███▊      | 8.12M/21.5M [00:03<00:04, 2.89MB/s] 39%|███▉      | 8.50M/21.5M [00:03<00:04, 3.01MB/s] 41%|████      | 8.88M/21.5M [00:03<00:04, 2.76MB/s] 43%|████▎     | 9.25M/21.5M [00:03<00:04, 2.83MB/s] 45%|████▍     | 9.62M/21.5M [00:03<00:04, 2.89MB/s] 46%|████▋     | 10.0M/21.5M [00:04<00:04, 2.87MB/s] 48%|████▊     | 10.4M/21.5M [00:04<00:04, 2.92MB/s] 50%|████▉     | 10.8M/21.5M [00:04<00:03, 3.08MB/s] 52%|█████▏    | 11.1M/21.5M [00:04<00:03, 3.29MB/s] 53%|█████▎    | 11.5M/21.5M [00:04<00:03, 3.10MB/s] 56%|█████▌    | 12.0M/21.5M [00:04<00:03, 3.23MB/s] 57%|█████▋    | 12.4M/21.5M [00:04<00:03, 2.85MB/s] 60%|█████▉    | 12.9M/21.5M [00:04<00:02, 3.20MB/s] 62%|██████▏   | 13.2M/21.5M [00:05<00:02, 3.18MB/s] 63%|██████▎   | 13.6M/21.5M [00:05<00:02, 3.29MB/s] 65%|██████▍   | 14.0M/21.5M [00:05<00:02, 2.78MB/s] 67%|██████▋   | 14.4M/21.5M [00:05<00:02, 2.93MB/s] 68%|██████▊   | 14.8M/21.5M [00:05<00:02, 2.77MB/s] 70%|███████   | 15.1M/21.5M [00:05<00:02, 2.44MB/s] 72%|███████▏  | 15.5M/21.5M [00:06<00:02, 2.52MB/s] 74%|███████▎  | 15.9M/21.5M [00:06<00:02, 2.25MB/s] 75%|███████▌  | 16.2M/21.5M [00:06<00:02, 2.40MB/s] 77%|███████▋  | 16.6M/21.5M [00:06<00:02, 2.52MB/s] 79%|███████▉  | 17.0M/21.5M [00:06<00:01, 2.79MB/s] 81%|████████  | 17.4M/21.5M [00:06<00:01, 2.93MB/s] 82%|████████▏ | 17.8M/21.5M [00:06<00:01, 2.87MB/s] 84%|████████▍ | 18.1M/21.5M [00:07<00:01, 2.63MB/s] 86%|████████▌ | 18.5M/21.5M [00:07<00:01, 2.67MB/s] 88%|████████▊ | 18.9M/21.5M [00:07<00:00, 2.84MB/s] 89%|████████▉ | 19.2M/21.5M [00:07<00:00, 2.97MB/s] 91%|█████████ | 19.6M/21.5M [00:07<00:00, 3.06MB/s] 93%|█████████▎| 20.0M/21.5M [00:07<00:00, 3.03MB/s] 95%|█████████▍| 20.4M/21.5M [00:07<00:00, 3.01MB/s] 96%|█████████▋| 20.8M/21.5M [00:07<00:00, 2.99MB/s] 98%|█████████▊| 21.1M/21.5M [00:08<00:00, 2.88MB/s]100%|█████████▉| 21.5M/21.5M [00:08<00:00, 2.99MB/s]100%|██████████| 21.5M/21.5M [00:08<00:00, 2.74MB/s]
+
+[14/39] yolov8s / clean (n/a)
+    [ 1000/10000] 83s elapsed, 12.0 img/s, ETA 747s
+    [ 2000/10000] 167s elapsed, 12.0 img/s, ETA 666s
+    [ 3000/10000] 250s elapsed, 12.0 img/s, ETA 583s
+    [ 4000/10000] 332s elapsed, 12.0 img/s, ETA 498s
+    [ 5000/10000] 415s elapsed, 12.1 img/s, ETA 415s
+    [ 6000/10000] 498s elapsed, 12.1 img/s, ETA 332s
+    [ 7000/10000] 580s elapsed, 12.1 img/s, ETA 248s
+    [ 8000/10000] 662s elapsed, 12.1 img/s, ETA 166s
+    [ 9000/10000] 745s elapsed, 12.1 img/s, ETA 83s
+    [10000/10000] 827s elapsed, 12.1 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.2387  mAP@50:95 = 0.1388  (infer 827s + compute 141s)
+    Saved -> yolov8s_clean.csv
+    Overall ETA: 7:30:14 (25 pairs left)
+
+[15/39] yolov8s / rain_light (light)
+    [ 1000/10000] 90s elapsed, 11.1 img/s, ETA 814s
+    [ 2000/10000] 179s elapsed, 11.2 img/s, ETA 715s
+    [ 3000/10000] 268s elapsed, 11.2 img/s, ETA 626s
+    [ 4000/10000] 359s elapsed, 11.2 img/s, ETA 538s
+    [ 5000/10000] 448s elapsed, 11.2 img/s, ETA 448s
+    [ 6000/10000] 537s elapsed, 11.2 img/s, ETA 358s
+    [ 7000/10000] 628s elapsed, 11.2 img/s, ETA 269s
+    [ 8000/10000] 718s elapsed, 11.1 img/s, ETA 179s
+    [ 9000/10000] 807s elapsed, 11.1 img/s, ETA 90s
+    [10000/10000] 897s elapsed, 11.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1558  mAP@50:95 = 0.0885  (infer 897s + compute 142s)
+    Saved -> yolov8s_rain_light.csv
+    Overall ETA: 7:11:07 (24 pairs left)
+
+[16/39] yolov8s / rain_medium (medium)
+    [ 1000/10000] 90s elapsed, 11.2 img/s, ETA 806s
+    [ 2000/10000] 179s elapsed, 11.2 img/s, ETA 716s
+    [ 3000/10000] 267s elapsed, 11.3 img/s, ETA 622s
+    [ 4000/10000] 363s elapsed, 11.0 img/s, ETA 544s
+    [ 5000/10000] 455s elapsed, 11.0 img/s, ETA 455s
+    [ 6000/10000] 543s elapsed, 11.1 img/s, ETA 362s
+    [ 7000/10000] 631s elapsed, 11.1 img/s, ETA 271s
+    [ 8000/10000] 721s elapsed, 11.1 img/s, ETA 180s
+    [ 9000/10000] 811s elapsed, 11.1 img/s, ETA 90s
+    [10000/10000] 900s elapsed, 11.1 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1050  mAP@50:95 = 0.0576  (infer 900s + compute 144s)
+    Saved -> yolov8s_rain_medium.csv
+    Overall ETA: 6:52:21 (23 pairs left)
+
+[17/39] yolov8s / rain_heavy (heavy)
+    [ 1000/10000] 85s elapsed, 11.8 img/s, ETA 763s
+    [ 2000/10000] 170s elapsed, 11.8 img/s, ETA 680s
+    [ 3000/10000] 256s elapsed, 11.7 img/s, ETA 597s
+    [ 4000/10000] 344s elapsed, 11.6 img/s, ETA 516s
+    [ 5000/10000] 435s elapsed, 11.5 img/s, ETA 435s
+    [ 6000/10000] 525s elapsed, 11.4 img/s, ETA 350s
+    [ 7000/10000] 616s elapsed, 11.4 img/s, ETA 264s
+    [ 8000/10000] 707s elapsed, 11.3 img/s, ETA 177s
+    [ 9000/10000] 798s elapsed, 11.3 img/s, ETA 89s
+    [10000/10000] 887s elapsed, 11.3 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0528  mAP@50:95 = 0.0274  (infer 887s + compute 131s)
+    Saved -> yolov8s_rain_heavy.csv
+    Overall ETA: 6:33:10 (22 pairs left)
+
+[18/39] yolov8s / fog_light (light)
+    [ 1000/10000] 167s elapsed, 6.0 img/s, ETA 1500s
+    [ 2000/10000] 334s elapsed, 6.0 img/s, ETA 1335s
+    [ 3000/10000] 500s elapsed, 6.0 img/s, ETA 1166s
+    [ 4000/10000] 665s elapsed, 6.0 img/s, ETA 998s
+    [ 5000/10000] 841s elapsed, 5.9 img/s, ETA 841s
+    [ 6000/10000] 1021s elapsed, 5.9 img/s, ETA 681s
+    [ 7000/10000] 1202s elapsed, 5.8 img/s, ETA 515s
+    [ 8000/10000] 1385s elapsed, 5.8 img/s, ETA 346s
+    [ 9000/10000] 1560s elapsed, 5.8 img/s, ETA 173s
+    [10000/10000] 1739s elapsed, 5.8 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.2192  mAP@50:95 = 0.1271  (infer 1739s + compute 146s)
+    Saved -> yolov8s_fog_light.csv
+    Overall ETA: 6:31:06 (21 pairs left)
+
+[19/39] yolov8s / fog_medium (medium)
+    [ 1000/10000] 169s elapsed, 5.9 img/s, ETA 1520s
+    [ 2000/10000] 340s elapsed, 5.9 img/s, ETA 1361s
+    [ 3000/10000] 512s elapsed, 5.9 img/s, ETA 1194s
+    [ 4000/10000] 684s elapsed, 5.8 img/s, ETA 1026s
+    [ 5000/10000] 857s elapsed, 5.8 img/s, ETA 857s
+    [ 6000/10000] 1027s elapsed, 5.8 img/s, ETA 685s
+    [ 7000/10000] 1198s elapsed, 5.8 img/s, ETA 513s
+    [ 8000/10000] 1367s elapsed, 5.9 img/s, ETA 342s
+    [ 9000/10000] 1537s elapsed, 5.9 img/s, ETA 171s
+    [10000/10000] 1706s elapsed, 5.9 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1807  mAP@50:95 = 0.1047  (infer 1706s + compute 146s)
+    Saved -> yolov8s_fog_medium.csv
+    Overall ETA: 6:25:22 (20 pairs left)
+
+[20/39] yolov8s / fog_heavy (heavy)
+    [ 1000/10000] 171s elapsed, 5.9 img/s, ETA 1535s
+    [ 2000/10000] 339s elapsed, 5.9 img/s, ETA 1358s
+    [ 3000/10000] 522s elapsed, 5.7 img/s, ETA 1219s
+    [ 4000/10000] 693s elapsed, 5.8 img/s, ETA 1039s
+    [ 5000/10000] 860s elapsed, 5.8 img/s, ETA 860s
+    [ 6000/10000] 1030s elapsed, 5.8 img/s, ETA 687s
+    [ 7000/10000] 1199s elapsed, 5.8 img/s, ETA 514s
+    [ 8000/10000] 1369s elapsed, 5.8 img/s, ETA 342s
+    [ 9000/10000] 1538s elapsed, 5.8 img/s, ETA 171s
+    [10000/10000] 1709s elapsed, 5.9 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1155  mAP@50:95 = 0.0688  (infer 1709s + compute 137s)
+    Saved -> yolov8s_fog_heavy.csv
+    Overall ETA: 6:17:01 (19 pairs left)
+
+[21/39] yolov8s / night_light (light)
+    [ 1000/10000] 143s elapsed, 7.0 img/s, ETA 1289s
+    [ 2000/10000] 286s elapsed, 7.0 img/s, ETA 1143s
+    [ 3000/10000] 430s elapsed, 7.0 img/s, ETA 1003s
+    [ 4000/10000] 583s elapsed, 6.9 img/s, ETA 875s
+    [ 5000/10000] 726s elapsed, 6.9 img/s, ETA 726s
+    [ 6000/10000] 868s elapsed, 6.9 img/s, ETA 579s
+    [ 7000/10000] 1009s elapsed, 6.9 img/s, ETA 432s
+    [ 8000/10000] 1152s elapsed, 6.9 img/s, ETA 288s
+    [ 9000/10000] 1295s elapsed, 7.0 img/s, ETA 144s
+    [10000/10000] 1436s elapsed, 7.0 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.2168  mAP@50:95 = 0.1262  (infer 1436s + compute 150s)
+    Saved -> yolov8s_night_light.csv
+    Overall ETA: 6:02:49 (18 pairs left)
+
+[22/39] yolov8s / night_medium (medium)
+    [ 1000/10000] 143s elapsed, 7.0 img/s, ETA 1291s
+    [ 2000/10000] 288s elapsed, 6.9 img/s, ETA 1152s
+    [ 3000/10000] 431s elapsed, 7.0 img/s, ETA 1007s
+    [ 4000/10000] 575s elapsed, 7.0 img/s, ETA 863s
+    [ 5000/10000] 718s elapsed, 7.0 img/s, ETA 718s
+    [ 6000/10000] 862s elapsed, 7.0 img/s, ETA 575s
+    [ 7000/10000] 1006s elapsed, 7.0 img/s, ETA 431s
+    [ 8000/10000] 1150s elapsed, 7.0 img/s, ETA 288s
+    [ 9000/10000] 1294s elapsed, 7.0 img/s, ETA 144s
+    [10000/10000] 1438s elapsed, 7.0 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1198  mAP@50:95 = 0.0693  (infer 1438s + compute 142s)
+    Saved -> yolov8s_night_medium.csv
+    Overall ETA: 5:47:26 (17 pairs left)
+
+[23/39] yolov8s / night_heavy (heavy)
+    [ 1000/10000] 143s elapsed, 7.0 img/s, ETA 1291s
+    [ 2000/10000] 287s elapsed, 7.0 img/s, ETA 1146s
+    [ 3000/10000] 437s elapsed, 6.9 img/s, ETA 1020s
+    [ 4000/10000] 580s elapsed, 6.9 img/s, ETA 870s
+    [ 5000/10000] 721s elapsed, 6.9 img/s, ETA 721s
+    [ 6000/10000] 860s elapsed, 7.0 img/s, ETA 573s
+    [ 7000/10000] 1003s elapsed, 7.0 img/s, ETA 430s
+    [ 8000/10000] 1149s elapsed, 7.0 img/s, ETA 287s
+    [ 9000/10000] 1295s elapsed, 7.0 img/s, ETA 144s
+    [10000/10000] 1441s elapsed, 6.9 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0075  mAP@50:95 = 0.0053  (infer 1441s + compute 42s)
+    Saved -> yolov8s_night_heavy.csv
+    Overall ETA: 5:29:58 (16 pairs left)
+
+[24/39] yolov8s / motion_blur_light (light)
+    [ 1000/10000] 114s elapsed, 8.7 img/s, ETA 1029s
+    [ 2000/10000] 229s elapsed, 8.7 img/s, ETA 918s
+    [ 3000/10000] 344s elapsed, 8.7 img/s, ETA 803s
+    [ 4000/10000] 459s elapsed, 8.7 img/s, ETA 689s
+    [ 5000/10000] 575s elapsed, 8.7 img/s, ETA 575s
+    [ 6000/10000] 688s elapsed, 8.7 img/s, ETA 459s
+    [ 7000/10000] 804s elapsed, 8.7 img/s, ETA 344s
+    [ 8000/10000] 919s elapsed, 8.7 img/s, ETA 230s
+    [ 9000/10000] 1033s elapsed, 8.7 img/s, ETA 115s
+    [10000/10000] 1148s elapsed, 8.7 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1777  mAP@50:95 = 0.1054  (infer 1148s + compute 157s)
+    Saved -> yolov8s_motion_blur_light.csv
+    Overall ETA: 5:10:03 (15 pairs left)
+
+[25/39] yolov8s / motion_blur_medium (medium)
+    [ 1000/10000] 118s elapsed, 8.4 img/s, ETA 1066s
+    [ 2000/10000] 235s elapsed, 8.5 img/s, ETA 941s
+    [ 3000/10000] 352s elapsed, 8.5 img/s, ETA 822s
+    [ 4000/10000] 469s elapsed, 8.5 img/s, ETA 704s
+    [ 5000/10000] 586s elapsed, 8.5 img/s, ETA 586s
+    [ 6000/10000] 703s elapsed, 8.5 img/s, ETA 469s
+    [ 7000/10000] 817s elapsed, 8.6 img/s, ETA 350s
+    [ 8000/10000] 933s elapsed, 8.6 img/s, ETA 233s
+    [ 9000/10000] 1047s elapsed, 8.6 img/s, ETA 116s
+    [10000/10000] 1162s elapsed, 8.6 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1061  mAP@50:95 = 0.0638  (infer 1162s + compute 167s)
+    Saved -> yolov8s_motion_blur_medium.csv
+    Overall ETA: 4:50:12 (14 pairs left)
+
+[26/39] yolov8s / motion_blur_heavy (heavy)
+    [ 1000/10000] 124s elapsed, 8.1 img/s, ETA 1114s
+    [ 2000/10000] 246s elapsed, 8.1 img/s, ETA 984s
+    [ 3000/10000] 368s elapsed, 8.2 img/s, ETA 858s
+    [ 4000/10000] 490s elapsed, 8.2 img/s, ETA 735s
+    [ 5000/10000] 612s elapsed, 8.2 img/s, ETA 612s
+    [ 6000/10000] 735s elapsed, 8.2 img/s, ETA 490s
+    [ 7000/10000] 857s elapsed, 8.2 img/s, ETA 367s
+    [ 8000/10000] 979s elapsed, 8.2 img/s, ETA 245s
+    [ 9000/10000] 1101s elapsed, 8.2 img/s, ETA 122s
+    [10000/10000] 1223s elapsed, 8.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0604  mAP@50:95 = 0.0360  (infer 1223s + compute 159s)
+    Saved -> yolov8s_motion_blur_heavy.csv
+    Overall ETA: 4:30:37 (13 pairs left)
+
+############################################################
+Model: yolov8m
+############################################################
+
+Loading yolov8m ...
+Loading yolov8m...
+Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8m.pt to 'yolov8m.pt'...
+  0%|          | 0.00/49.7M [00:00<?, ?B/s]  2%|▏         | 768k/49.7M [00:00<00:07, 6.66MB/s]  6%|▌         | 2.75M/49.7M [00:00<00:03, 14.2MB/s]  9%|▉         | 4.62M/49.7M [00:00<00:02, 16.3MB/s] 13%|█▎        | 6.25M/49.7M [00:00<00:03, 15.0MB/s] 16%|█▌        | 7.75M/49.7M [00:00<00:03, 14.4MB/s] 19%|█▉        | 9.50M/49.7M [00:00<00:02, 15.1MB/s] 22%|██▏       | 11.0M/49.7M [00:00<00:03, 12.1MB/s] 25%|██▍       | 12.2M/49.7M [00:01<00:08, 4.56MB/s] 27%|██▋       | 13.2M/49.7M [00:02<00:11, 3.21MB/s] 28%|██▊       | 14.0M/49.7M [00:02<00:10, 3.41MB/s] 29%|██▉       | 14.6M/49.7M [00:02<00:10, 3.60MB/s] 31%|███       | 15.2M/49.7M [00:02<00:10, 3.57MB/s] 32%|███▏      | 15.8M/49.7M [00:03<00:13, 2.72MB/s] 33%|███▎      | 16.2M/49.7M [00:03<00:13, 2.65MB/s] 33%|███▎      | 16.6M/49.7M [00:03<00:12, 2.69MB/s] 34%|███▍      | 17.0M/49.7M [00:03<00:12, 2.83MB/s] 35%|███▍      | 17.4M/49.7M [00:03<00:11, 2.83MB/s] 36%|███▌      | 17.8M/49.7M [00:03<00:11, 2.89MB/s] 36%|███▋      | 18.1M/49.7M [00:04<00:11, 2.83MB/s] 37%|███▋      | 18.5M/49.7M [00:04<00:11, 2.83MB/s] 38%|███▊      | 18.9M/49.7M [00:04<00:11, 2.83MB/s] 39%|███▊      | 19.2M/49.7M [00:04<00:10, 2.98MB/s] 39%|███▉      | 19.6M/49.7M [00:04<00:10, 2.91MB/s] 40%|████      | 20.0M/49.7M [00:04<00:11, 2.77MB/s] 41%|████      | 20.4M/49.7M [00:04<00:11, 2.71MB/s] 42%|████▏     | 20.8M/49.7M [00:05<00:11, 2.73MB/s] 42%|████▏     | 21.1M/49.7M [00:05<00:10, 2.85MB/s] 43%|████▎     | 21.5M/49.7M [00:05<00:09, 3.01MB/s] 44%|████▍     | 22.0M/49.7M [00:05<00:08, 3.44MB/s] 45%|████▌     | 22.4M/49.7M [00:05<00:08, 3.48MB/s] 46%|████▌     | 22.9M/49.7M [00:05<00:07, 3.92MB/s] 47%|████▋     | 23.4M/49.7M [00:05<00:09, 2.83MB/s] 49%|████▉     | 24.2M/49.7M [00:06<00:06, 3.92MB/s] 50%|████▉     | 24.8M/49.7M [00:06<00:07, 3.41MB/s] 51%|█████     | 25.2M/49.7M [00:06<00:08, 3.16MB/s] 52%|█████▏    | 25.8M/49.7M [00:06<00:07, 3.42MB/s] 53%|█████▎    | 26.1M/49.7M [00:06<00:07, 3.25MB/s] 54%|█████▎    | 26.6M/49.7M [00:06<00:06, 3.60MB/s] 54%|█████▍    | 27.0M/49.7M [00:06<00:06, 3.48MB/s] 55%|█████▌    | 27.4M/49.7M [00:07<00:06, 3.40MB/s] 56%|█████▌    | 27.8M/49.7M [00:07<00:06, 3.38MB/s] 57%|█████▋    | 28.1M/49.7M [00:07<00:07, 3.16MB/s] 58%|█████▊    | 28.6M/49.7M [00:07<00:06, 3.67MB/s] 59%|█████▊    | 29.1M/49.7M [00:07<00:05, 4.01MB/s] 60%|█████▉    | 29.6M/49.7M [00:07<00:04, 4.27MB/s] 61%|██████    | 30.1M/49.7M [00:07<00:04, 4.15MB/s] 62%|██████▏   | 30.6M/49.7M [00:07<00:05, 3.84MB/s] 63%|██████▎   | 31.1M/49.7M [00:08<00:04, 4.16MB/s] 64%|██████▎   | 31.6M/49.7M [00:08<00:04, 4.16MB/s] 65%|██████▍   | 32.2M/49.7M [00:08<00:03, 4.72MB/s] 66%|██████▌   | 32.8M/49.7M [00:08<00:04, 4.23MB/s] 67%|██████▋   | 33.2M/49.7M [00:08<00:03, 4.46MB/s] 68%|██████▊   | 33.8M/49.7M [00:08<00:04, 3.73MB/s] 69%|██████▉   | 34.2M/49.7M [00:08<00:04, 3.88MB/s] 70%|██████▉   | 34.8M/49.7M [00:08<00:04, 3.85MB/s] 71%|███████   | 35.2M/49.7M [00:09<00:04, 3.61MB/s] 72%|███████▏  | 35.6M/49.7M [00:09<00:04, 3.56MB/s] 72%|███████▏  | 36.0M/49.7M [00:09<00:04, 3.48MB/s] 73%|███████▎  | 36.4M/49.7M [00:09<00:03, 3.53MB/s] 74%|███████▍  | 36.9M/49.7M [00:09<00:03, 3.64MB/s] 75%|███████▍  | 37.2M/49.7M [00:09<00:04, 3.05MB/s] 76%|███████▌  | 37.8M/49.7M [00:09<00:03, 3.44MB/s] 77%|███████▋  | 38.1M/49.7M [00:10<00:04, 3.01MB/s] 78%|███████▊  | 38.6M/49.7M [00:10<00:03, 3.38MB/s] 79%|███████▊  | 39.1M/49.7M [00:10<00:05, 1.92MB/s] 81%|████████▏ | 40.5M/49.7M [00:10<00:02, 3.58MB/s] 83%|████████▎ | 41.1M/49.7M [00:11<00:02, 3.67MB/s] 84%|████████▎ | 41.6M/49.7M [00:11<00:02, 3.86MB/s] 85%|████████▍ | 42.1M/49.7M [00:11<00:02, 3.62MB/s] 86%|████████▌ | 42.8M/49.7M [00:11<00:01, 4.07MB/s] 87%|████████▋ | 43.2M/49.7M [00:11<00:01, 3.44MB/s] 88%|████████▊ | 43.8M/49.7M [00:11<00:01, 3.75MB/s] 89%|████████▉ | 44.2M/49.7M [00:11<00:01, 3.30MB/s] 90%|████████▉ | 44.6M/49.7M [00:12<00:01, 3.16MB/s] 91%|█████████ | 45.1M/49.7M [00:12<00:01, 3.55MB/s] 92%|█████████▏| 45.8M/49.7M [00:12<00:01, 3.53MB/s] 93%|█████████▎| 46.2M/49.7M [00:12<00:00, 3.73MB/s] 94%|█████████▍| 46.8M/49.7M [00:12<00:00, 4.03MB/s] 95%|█████████▌| 47.2M/49.7M [00:12<00:00, 4.03MB/s] 96%|█████████▌| 47.8M/49.7M [00:12<00:00, 4.29MB/s] 97%|█████████▋| 48.2M/49.7M [00:12<00:00, 4.13MB/s] 98%|█████████▊| 48.8M/49.7M [00:13<00:00, 4.16MB/s]100%|█████████▉| 49.5M/49.7M [00:13<00:00, 4.63MB/s]100%|██████████| 49.7M/49.7M [00:13<00:00, 3.93MB/s]
+
+[27/39] yolov8m / clean (n/a)
+    [ 1000/10000] 150s elapsed, 6.7 img/s, ETA 1349s
+    [ 2000/10000] 300s elapsed, 6.7 img/s, ETA 1198s
+    [ 3000/10000] 450s elapsed, 6.7 img/s, ETA 1049s
+    [ 4000/10000] 600s elapsed, 6.7 img/s, ETA 900s
+    [ 5000/10000] 749s elapsed, 6.7 img/s, ETA 749s
+    [ 6000/10000] 901s elapsed, 6.7 img/s, ETA 600s
+    [ 7000/10000] 1056s elapsed, 6.6 img/s, ETA 453s
+    [ 8000/10000] 1211s elapsed, 6.6 img/s, ETA 303s
+    [ 9000/10000] 1367s elapsed, 6.6 img/s, ETA 152s
+    [10000/10000] 1524s elapsed, 6.6 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.2893  mAP@50:95 = 0.1703  (infer 1524s + compute 143s)
+    Saved -> yolov8m_clean.csv
+    Overall ETA: 4:13:00 (12 pairs left)
+
+[28/39] yolov8m / rain_light (light)
+    [ 1000/10000] 167s elapsed, 6.0 img/s, ETA 1506s
+    [ 2000/10000] 327s elapsed, 6.1 img/s, ETA 1309s
+    [ 3000/10000] 487s elapsed, 6.2 img/s, ETA 1136s
+    [ 4000/10000] 647s elapsed, 6.2 img/s, ETA 971s
+    [ 5000/10000] 806s elapsed, 6.2 img/s, ETA 806s
+    [ 6000/10000] 966s elapsed, 6.2 img/s, ETA 644s
+    [ 7000/10000] 1127s elapsed, 6.2 img/s, ETA 483s
+    [ 8000/10000] 1288s elapsed, 6.2 img/s, ETA 322s
+    [ 9000/10000] 1448s elapsed, 6.2 img/s, ETA 161s
+    [10000/10000] 1608s elapsed, 6.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.2006  mAP@50:95 = 0.1153  (infer 1608s + compute 148s)
+    Saved -> yolov8m_rain_light.csv
+    Overall ETA: 3:55:08 (11 pairs left)
+
+[29/39] yolov8m / rain_medium (medium)
+    [ 1000/10000] 165s elapsed, 6.1 img/s, ETA 1483s
+    [ 2000/10000] 331s elapsed, 6.0 img/s, ETA 1324s
+    [ 3000/10000] 493s elapsed, 6.1 img/s, ETA 1150s
+    [ 4000/10000] 652s elapsed, 6.1 img/s, ETA 978s
+    [ 5000/10000] 810s elapsed, 6.2 img/s, ETA 810s
+    [ 6000/10000] 967s elapsed, 6.2 img/s, ETA 645s
+    [ 7000/10000] 1125s elapsed, 6.2 img/s, ETA 482s
+    [ 8000/10000] 1285s elapsed, 6.2 img/s, ETA 321s
+    [ 9000/10000] 1449s elapsed, 6.2 img/s, ETA 161s
+    [10000/10000] 1619s elapsed, 6.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1473  mAP@50:95 = 0.0835  (infer 1619s + compute 151s)
+    Saved -> yolov8m_rain_medium.csv
+    Overall ETA: 3:36:33 (10 pairs left)
+
+[30/39] yolov8m / rain_heavy (heavy)
+    [ 1000/10000] 161s elapsed, 6.2 img/s, ETA 1453s
+    [ 2000/10000] 339s elapsed, 5.9 img/s, ETA 1357s
+    [ 3000/10000] 521s elapsed, 5.8 img/s, ETA 1216s
+    [ 4000/10000] 701s elapsed, 5.7 img/s, ETA 1052s
+    [ 5000/10000] 885s elapsed, 5.7 img/s, ETA 885s
+    [ 6000/10000] 1062s elapsed, 5.7 img/s, ETA 708s
+    [ 7000/10000] 1236s elapsed, 5.7 img/s, ETA 530s
+    [ 8000/10000] 1416s elapsed, 5.7 img/s, ETA 354s
+    [ 9000/10000] 1588s elapsed, 5.7 img/s, ETA 176s
+    [10000/10000] 1763s elapsed, 5.7 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0840  mAP@50:95 = 0.0454  (infer 1763s + compute 144s)
+    Saved -> yolov8m_rain_heavy.csv
+    Overall ETA: 3:17:56 (9 pairs left)
+
+[31/39] yolov8m / fog_light (light)
+    [ 1000/10000] 253s elapsed, 3.9 img/s, ETA 2281s
+    [ 2000/10000] 503s elapsed, 4.0 img/s, ETA 2011s
+    [ 3000/10000] 751s elapsed, 4.0 img/s, ETA 1753s
+    [ 4000/10000] 1001s elapsed, 4.0 img/s, ETA 1502s
+    [ 5000/10000] 1251s elapsed, 4.0 img/s, ETA 1251s
+    [ 6000/10000] 1502s elapsed, 4.0 img/s, ETA 1001s
+    [ 7000/10000] 1752s elapsed, 4.0 img/s, ETA 751s
+    [ 8000/10000] 1998s elapsed, 4.0 img/s, ETA 500s
+    [ 9000/10000] 2246s elapsed, 4.0 img/s, ETA 250s
+    [10000/10000] 2493s elapsed, 4.0 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.2813  mAP@50:95 = 0.1657  (infer 2493s + compute 143s)
+    Saved -> yolov8m_fog_light.csv
+    Overall ETA: 3:01:37 (8 pairs left)
+
+[32/39] yolov8m / fog_medium (medium)
+    [ 1000/10000] 239s elapsed, 4.2 img/s, ETA 2147s
+    [ 2000/10000] 478s elapsed, 4.2 img/s, ETA 1913s
+    [ 3000/10000] 717s elapsed, 4.2 img/s, ETA 1673s
+    [ 4000/10000] 954s elapsed, 4.2 img/s, ETA 1431s
+    [ 5000/10000] 1190s elapsed, 4.2 img/s, ETA 1190s
+    [ 6000/10000] 1423s elapsed, 4.2 img/s, ETA 949s
+    [ 7000/10000] 1663s elapsed, 4.2 img/s, ETA 713s
+    [ 8000/10000] 1907s elapsed, 4.2 img/s, ETA 477s
+    [ 9000/10000] 2143s elapsed, 4.2 img/s, ETA 238s
+    [10000/10000] 2381s elapsed, 4.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.2601  mAP@50:95 = 0.1515  (infer 2381s + compute 139s)
+    Saved -> yolov8m_fog_medium.csv
+    Overall ETA: 2:43:08 (7 pairs left)
+
+[33/39] yolov8m / fog_heavy (heavy)
+    [ 1000/10000] 236s elapsed, 4.2 img/s, ETA 2128s
+    [ 2000/10000] 475s elapsed, 4.2 img/s, ETA 1900s
+    [ 3000/10000] 713s elapsed, 4.2 img/s, ETA 1663s
+    [ 4000/10000] 952s elapsed, 4.2 img/s, ETA 1429s
+    [ 5000/10000] 1192s elapsed, 4.2 img/s, ETA 1192s
+    [ 6000/10000] 1432s elapsed, 4.2 img/s, ETA 954s
+    [ 7000/10000] 1671s elapsed, 4.2 img/s, ETA 716s
+    [ 8000/10000] 1910s elapsed, 4.2 img/s, ETA 478s
+    [ 9000/10000] 2149s elapsed, 4.2 img/s, ETA 239s
+    [10000/10000] 2385s elapsed, 4.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.2102  mAP@50:95 = 0.1233  (infer 2385s + compute 142s)
+    Saved -> yolov8m_fog_heavy.csv
+    Overall ETA: 2:23:15 (6 pairs left)
+
+[34/39] yolov8m / night_light (light)
+    [ 1000/10000] 200s elapsed, 5.0 img/s, ETA 1804s
+    [ 2000/10000] 407s elapsed, 4.9 img/s, ETA 1627s
+    [ 3000/10000] 627s elapsed, 4.8 img/s, ETA 1463s
+    [ 4000/10000] 840s elapsed, 4.8 img/s, ETA 1260s
+    [ 5000/10000] 1053s elapsed, 4.7 img/s, ETA 1053s
+    [ 6000/10000] 1266s elapsed, 4.7 img/s, ETA 844s
+    [ 7000/10000] 1479s elapsed, 4.7 img/s, ETA 634s
+    [ 8000/10000] 1691s elapsed, 4.7 img/s, ETA 423s
+    [ 9000/10000] 1902s elapsed, 4.7 img/s, ETA 211s
+    [10000/10000] 2113s elapsed, 4.7 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.2667  mAP@50:95 = 0.1574  (infer 2113s + compute 141s)
+    Saved -> yolov8m_night_light.csv
+    Overall ETA: 2:01:23 (5 pairs left)
+
+[35/39] yolov8m / night_medium (medium)
+    [ 1000/10000] 218s elapsed, 4.6 img/s, ETA 1966s
+    [ 2000/10000] 436s elapsed, 4.6 img/s, ETA 1744s
+    [ 3000/10000] 651s elapsed, 4.6 img/s, ETA 1519s
+    [ 4000/10000] 867s elapsed, 4.6 img/s, ETA 1300s
+    [ 5000/10000] 1083s elapsed, 4.6 img/s, ETA 1083s
+    [ 6000/10000] 1299s elapsed, 4.6 img/s, ETA 866s
+    [ 7000/10000] 1513s elapsed, 4.6 img/s, ETA 649s
+    [ 8000/10000] 1727s elapsed, 4.6 img/s, ETA 432s
+    [ 9000/10000] 1943s elapsed, 4.6 img/s, ETA 216s
+    [10000/10000] 2159s elapsed, 4.6 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1577  mAP@50:95 = 0.0938  (infer 2159s + compute 141s)
+    Saved -> yolov8m_night_medium.csv
+    Overall ETA: 1:38:43 (4 pairs left)
+
+[36/39] yolov8m / night_heavy (heavy)
+    [ 1000/10000] 214s elapsed, 4.7 img/s, ETA 1924s
+    [ 2000/10000] 428s elapsed, 4.7 img/s, ETA 1712s
+    [ 3000/10000] 641s elapsed, 4.7 img/s, ETA 1496s
+    [ 4000/10000] 864s elapsed, 4.6 img/s, ETA 1296s
+    [ 5000/10000] 1079s elapsed, 4.6 img/s, ETA 1079s
+    [ 6000/10000] 1294s elapsed, 4.6 img/s, ETA 863s
+    [ 7000/10000] 1510s elapsed, 4.6 img/s, ETA 647s
+    [ 8000/10000] 1725s elapsed, 4.6 img/s, ETA 431s
+    [ 9000/10000] 1941s elapsed, 4.6 img/s, ETA 216s
+    [10000/10000] 2157s elapsed, 4.6 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0139  mAP@50:95 = 0.0088  (infer 2157s + compute 54s)
+    Saved -> yolov8m_night_heavy.csv
+    Overall ETA: 1:15:03 (3 pairs left)
+
+[37/39] yolov8m / motion_blur_light (light)
+    [ 1000/10000] 191s elapsed, 5.2 img/s, ETA 1721s
+    [ 2000/10000] 382s elapsed, 5.2 img/s, ETA 1530s
+    [ 3000/10000] 572s elapsed, 5.2 img/s, ETA 1334s
+    [ 4000/10000] 765s elapsed, 5.2 img/s, ETA 1147s
+    [ 5000/10000] 953s elapsed, 5.2 img/s, ETA 953s
+    [ 6000/10000] 1142s elapsed, 5.3 img/s, ETA 762s
+    [ 7000/10000] 1331s elapsed, 5.3 img/s, ETA 571s
+    [ 8000/10000] 1529s elapsed, 5.2 img/s, ETA 382s
+    [ 9000/10000] 1719s elapsed, 5.2 img/s, ETA 191s
+    [10000/10000] 1909s elapsed, 5.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.2158  mAP@50:95 = 0.1304  (infer 1909s + compute 145s)
+    Saved -> yolov8m_motion_blur_light.csv
+    Overall ETA: 0:50:31 (2 pairs left)
+
+[38/39] yolov8m / motion_blur_medium (medium)
+    [ 1000/10000] 191s elapsed, 5.2 img/s, ETA 1719s
+    [ 2000/10000] 382s elapsed, 5.2 img/s, ETA 1529s
+    [ 3000/10000] 573s elapsed, 5.2 img/s, ETA 1337s
+    [ 4000/10000] 764s elapsed, 5.2 img/s, ETA 1147s
+    [ 5000/10000] 956s elapsed, 5.2 img/s, ETA 956s
+    [ 6000/10000] 1147s elapsed, 5.2 img/s, ETA 765s
+    [ 7000/10000] 1338s elapsed, 5.2 img/s, ETA 574s
+    [ 8000/10000] 1528s elapsed, 5.2 img/s, ETA 382s
+    [ 9000/10000] 1719s elapsed, 5.2 img/s, ETA 191s
+    [10000/10000] 1909s elapsed, 5.2 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.1398  mAP@50:95 = 0.0843  (infer 1909s + compute 150s)
+    Saved -> yolov8m_motion_blur_medium.csv
+    Overall ETA: 0:25:30 (1 pairs left)
+
+[39/39] yolov8m / motion_blur_heavy (heavy)
+    [ 1000/10000] 197s elapsed, 5.1 img/s, ETA 1775s
+    [ 2000/10000] 406s elapsed, 4.9 img/s, ETA 1625s
+    [ 3000/10000] 603s elapsed, 5.0 img/s, ETA 1408s
+    [ 4000/10000] 801s elapsed, 5.0 img/s, ETA 1201s
+    [ 5000/10000] 998s elapsed, 5.0 img/s, ETA 998s
+    [ 6000/10000] 1196s elapsed, 5.0 img/s, ETA 797s
+    [ 7000/10000] 1393s elapsed, 5.0 img/s, ETA 597s
+    [ 8000/10000] 1591s elapsed, 5.0 img/s, ETA 398s
+    [ 9000/10000] 1789s elapsed, 5.0 img/s, ETA 199s
+    [10000/10000] 1987s elapsed, 5.0 img/s, ETA 0s
+    Computing mAP via pycocotools ...
+    mAP@50 = 0.0804  mAP@50:95 = 0.0484  (infer 1987s + compute 150s)
+    Saved -> yolov8m_motion_blur_heavy.csv
+    Overall ETA: 0:00:00 (0 pairs left)
+
+============================================================
+All pairs complete in 16.75 hours (0 skipped)
+Finished at 2026-05-30 06:15:16
+============================================================
+
+Results: /Users/mandar/WeatherSense/results/stage5
+Files written: 39
